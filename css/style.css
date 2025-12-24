@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 950px; /* increased for side-by-side */
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.subtitle {
+  text-align: center;
+  color: #e8f7ff;
+  margin-bottom: 30px;
+}
+
+/* ===== CARD LAYOUT ===== */
+.card-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  flex: 1;
+}
+
+/* ===== FORM ELEMENTS ===== */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4facfe;
+}
+
+/* ===== BUTTON ===== */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00c6ff;
+  transform: scale(1.02);
+}
+
+/* ===== STATUS TEXT ===== */
+.status-text {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #e8f7ff;
+  font-size: 13px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .card-row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart City Issue Reporting</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🏙️ Smart City Issue Reporting</h1>
+    <p class="subtitle">
+      Report city issues like road damage, garbage, street lights & track resolution
+    </p>
+
+    <!-- SIDE BY SIDE CARDS -->
+    <div class="card-row">
+
+      <!-- ISSUE SUBMISSION CARD -->
+      <div class="card">
+        <label>👤 Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>📂 Issue Category</label>
+        <select id="category">
+          <option value="">-- Select Category --</option>
+          <option value="Road">Road Damage</option>
+          <option value="Garbage">Garbage</option>
+          <option value="Street Light">Street Light</option>
+          <option value="Water">Water Supply</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label>📍 Location</label>
+        <input type="text" id="location" placeholder="Eg: Shivaji Nagar, Pune">
+
+        <label>📝 Description</label>
+        <textarea
+          id="description"
+          rows="4"
+          placeholder="Describe the issue clearly...">
+        </textarea>
+
+        <button id="submit">🚀 Submit Issue</button>
+      </div>
+
+      <!-- STATUS CHECK CARD -->
+      <div class="card">
+        <h3>🔍 Check Issue Status</h3>
+
+        <label>🆔 Issue ID</label>
+        <input
+          type="text"
+          id="issueId"
+          placeholder="Enter your Issue ID">
+
+        <button id="checkStatus">📌 Check Status</button>
+
+        <p id="statusResult" class="status-text"></p>
+      </div>
+
+    </div>
+
+    <p class="footer">
+      © 2025 Smart City System | Built for Resume Project
+    </p>
+  </div>
+
+  <script type="module" src="js/reportIssue.js"></script>
+
+</body>
+</html>
